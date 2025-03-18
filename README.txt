@@ -2,7 +2,9 @@ A Python-to-C code translator that converts a subset of Python into equivalent C
 
 Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this translator directly generates C code using string manipulation during parsing.
 
+
 # How It Works
+
 1. Lexical Analysis (Scanning)
   •  The Flex scanner tokenizes Python code into keywords, identifiers, operators, and numbers.
   •  It also implements a stack-based system to manage Python-style indentation and translate it into C-style {} blocks.
@@ -18,7 +20,9 @@ Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this 
     -  C-equivalent statements for assignments, conditionals, and loops.
     -  Formatted print statements to output variable values.
 
+
 # Installation & Usage
+
   • To compile the translator, run:
     make
 
@@ -34,7 +38,9 @@ Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this 
     ./parse < testing_code/error3.py
     ./parse < testing_code/error4.py
 
+
 # Tools and Technologies
+
   •  C
   •  Flex
   •  Bison
