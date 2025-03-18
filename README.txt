@@ -23,7 +23,16 @@ Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this 
     make
 
   • To translate a Python file into C, use:
-    ./parse < test.py
+    ./parse < testing_code/p1.py
+    ./parse < testing_code/p2.py
+    ./parse < testing_code/p3.py
+    ./parse < testing_code/p4.py
+
+  • The translator detects syntax errors in Python files. Try running:
+    ./parse < testing_code/error1.py
+    ./parse < testing_code/error2.py
+    ./parse < testing_code/error3.py
+    ./parse < testing_code/error4.py
 
 # Tools and Technologies
   •  C
