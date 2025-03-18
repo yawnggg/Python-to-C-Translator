@@ -4,30 +4,28 @@ Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this 
 
 # How It Works
 1. Lexical Analysis (Scanning)
-  -  The Flex scanner tokenizes Python code into keywords, identifiers, operators, and numbers.
-  -  It also implements a stack-based system to manage Python-style indentation and translate it into C-style {} blocks.
+  •  The Flex scanner tokenizes Python code into keywords, identifiers, operators, and numbers.
+  •  It also implements a stack-based system to manage Python-style indentation and translate it into C-style {} blocks.
 2. Syntax Analysis (Parsing)
-  -  The Bison parser applies Python grammar rules and translates statements into C syntax.
-  -  It handles assignments, arithmetic expressions, conditionals (if), and loops (while).
+  •  The Bison parser applies Python grammar rules and translates statements into C syntax.
+  •  It handles assignments, arithmetic expressions, conditionals (if), and loops (while).
 3. Symbol Table Management
-  -  Tracks variable declarations and stores values to ensure proper C code generation.
-  -  Detects undefined identifiers and reports errors.
+  •  Tracks variable declarations and stores values to ensure proper C code generation.
+  •  Detects undefined identifiers and reports errors.
 4. C Code Generation
-  -  Produces a C main() function with:
-  -  Variable declarations based on the symbol table.
-  -  C-equivalent statements for assignments, conditionals, and loops.
-  -  Formatted print statements to output variable values.
+  •  Produces a C main() function with:
+    -  Variable declarations based on the symbol table.
+    -  C-equivalent statements for assignments, conditionals, and loops.
+    -  Formatted print statements to output variable values.
 
 # Installation & Usage
-  To compile the translator, run:
-    ```sh
+  • To compile the translator, run:
     make
 
-  To translate a Python file into C, use:
+  • To translate a Python file into C, use:
     ./parse < test.py
 
-# Technologies Used
-  -  C
-  -  Flex (Lexical Analyzer)
-  -  Bison (Parser Generator)
-  -  Symbol Table for Variable Tracking
+# Tools and Technologies
+  •  C
+  •  Flex
+  •  Bison
