@@ -24,8 +24,8 @@ Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this 
 # Installation & Usage
 
   • To clone the repository:
-    git clone `https://github.com/yawnggg/python-to-c-translator.git`
-    cd python-to-c-translator
+    git clone `https://github.com/yawnggg/Python-to-C-Translator.git`
+    cd 
 
   • To compile the translator, run:
     make
