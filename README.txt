@@ -23,20 +23,30 @@ Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this 
 
 # Installation & Usage
 
-  • To compile the translator, run:
-    make
+  •  Before compiling, ensure you have the following installed:
+      -  bison (for parsing)
+      -  flex (for lexical analysis)
+      -  gcc (for compiling)
+      -  make (for building)
+      
+      > For Debian/Ubuntu run: sudo apt install bison flex make gcc
+      > For macOS (using Homebrew) run: brew install bison flex make gcc
+      > For Windows (using MSYS2) run: pacman -S --needed mingw-w64-x86_64-bison mingw-w64-x86_64-flex mingw-w64-x86_64-gcc make
 
-  • To translate a Python file into C, use:
-    ./parse < testing_code/p1.py
-    ./parse < testing_code/p2.py
-    ./parse < testing_code/p3.py
-    ./parse < testing_code/p4.py
+  •  To compile the translator, run:
+      make
 
-  • The translator detects syntax errors in Python files. Try running:
-    ./parse < testing_code/error1.py
-    ./parse < testing_code/error2.py
-    ./parse < testing_code/error3.py
-    ./parse < testing_code/error4.py
+  •  To translate a Python file into C, use:
+      ./parse < testing_code/p1.py
+      ./parse < testing_code/p2.py
+      ./parse < testing_code/p3.py
+      ./parse < testing_code/p4.py
+
+  •  The translator detects syntax errors in Python files. Try running:
+      ./parse < testing_code/error1.py
+      ./parse < testing_code/error2.py
+      ./parse < testing_code/error3.py
+      ./parse < testing_code/error4.py
 
 
 # Tools and Technologies
