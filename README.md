@@ -1,3 +1,5 @@
+# Python-to-C Translator
+
 A Python-to-C code translator that converts a subset of Python into equivalent C code. It implements a custom scanner (lexer) and a custom parser using Flex (Lex) and Bison (Yacc). The program tokenizes and parses Python syntax, generates corresponding C code, and manages a symbol table to track variable declarations and values.
 
 Unlike traditional compilers that construct an Abstract Syntax Tree (AST), this translator directly generates C code using string manipulation during parsing.
